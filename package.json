@@ -12,7 +12,9 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "dev": "TINA_PUBLIC_IS_LOCAL=true tinacms dev -c \"next dev\""
+    "dev": "tinacms dev -c \"npm run next:dev\"",
+    "next:dev": "next dev"
+
   },
   "dependencies": {
     "@docusaurus/core": "3.8.1",
@@ -27,6 +29,7 @@
     "@docusaurus/module-type-aliases": "3.8.1",
     "@docusaurus/types": "3.8.1",
     "@tinacms/cli": "^1.10.2",
+    "cross-env": "^10.0.0",
     "tinacms": "^2.8.2"
   },
   "browserslist": {
